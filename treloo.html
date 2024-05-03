@@ -21,8 +21,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&family=Raleway&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-
     <title>Treloo</title>
 
 </head>
@@ -32,25 +30,28 @@
     <!-- Start Navbar -->
     <nav>
         <div class="container">
-
             <a href="#" class="logo">Treloo</a>
-
-          <i class="fa-solid fa-bars" id="icon"></i>
-
-
+            <i class="fa-solid fa-bars" id="icon"></i>
             <ul id="iconlist">
-                <li> <a href="#review">Review </a>  </li>
-                <li> <a href="#tips">Tips     </a>  </li>
-                <li> <a href="#alerts">Alerts </a>  </li>
-                <li> <a href="#blog">Blog     </a>  </li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
-
-            
-
-
         </div>
     </nav>
-
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const icon = document.getElementById("icon");
+            const iconList = document.getElementById("iconlist");
+    
+            icon.addEventListener("click", function () {
+                iconList.classList.toggle("show");
+            });
+        });
+    </script>
+    
 
     <!-- End Navbar -->
 
@@ -541,7 +542,7 @@
     </footer>
 
 
-<script src="script/js"></script>
+
 
     <!-- End Footer -->
 

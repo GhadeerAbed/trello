@@ -116,25 +116,27 @@ nav .container i {
 }
 /*gap change*/
 @media (max-width: 767px) {
-  nav .container i:hover + ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: absolute;
-    left: 0px;
-    top: 100%;
-    width: 100%;
-    background-color: #0f0f0f9d;
-    padding: 20px 0px;
-  }
+/* Show the navigation menu when the "show" class is applied */
+nav .container ul.show {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  width: 100%;
+  background-color: #0f0f0f9d;
+  padding: 20px 0px;
+}
 
-  nav .container ul li:first-of-type {
-    border-bottom: 1px solid #cce0fd;
-  }
+nav .container ul li:first-of-type {
+  border-bottom: 1px solid #cce0fd;
+}
 
-  nav .container ul li {
-    padding-bottom: 10px;
-  }
+nav .container ul li {
+  padding-bottom: 10px;
+}
+
 }
 
 /* End Navbar */
